@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+   <head> 
+      <title>Countdown Redirect</title> 
+   </head> 
+   
+   <body> 
+      <h1>Countdown Redirect</h1> 
+      <p>Tra 10 secondi verrai reindirizzato al mio CV</p>
+      <p>Ci stiamo accertando che tutti i campi siano completi</p> 
+      <p id="countdown"></p>
+
+   <script type="text/javascript">
+     var timeLeft = 10;
+     var countdownInterval = setInterval(function() {
+       timeLeft--;
+       document.getElementById("countdown").innerHTML = "Reindirizzato in " + timeLeft + " secondi...";
+       if (timeLeft <= 0) {
+         clearInterval(countdownInterval);
+         window.location.href = "/cv.html";
+       }
+     }, 1000);
+   </script>
+   </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curriculum Vitae</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+	.blink {
+                animation: blinker 1.5s linear infinite;
+
+                color: red;
+                font-family: sans-serif;
+            }
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+
+	.schermo
+	{
+  		padding: 20px;
+  		color: white;
+	}
+	@media only screen and (max-width: 600px) 	/* Extra small devices (phones, 600px and down) */
+	{
+  		.schermo {background: purple;}
+	}
+
+	@media only screen and (min-width: 600px) 	/* Small devices (portrait tablets and large phones, 600px and up) */
+	{
+  		.schermo {background: green;}
+	}
+
+	@media only screen and (min-width: 768px) 	/* Medium devices (landscape tablets, 768px and up) */
+	{
+  		.schermo {background: gray;}
+	} 
+
+	@media only screen and (min-width: 992px) 	/* Large devices (laptops/desktops, 992px and up) */
+	{
+  		.schermo {background: orange;}
+	} 
+
+	@media only screen and (min-width: 1200px) /* Extra large devices (large laptops and desktops, 1200px and up) */
+	{
+  		.schermo {background: pink;}
+	}
+		
+	.container 
+		{
+			max-width: 800px;
+			margin: 20px auto;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+			/*padding: 20px;*/
+			box-sizing: border-box;
+		}
+
+		h1, h2, p, ul {
+			font-family: Arial, sans-serif;
+			color: #333;
+		}
+		
+		h1 {
+			text-align: center;
+			font-size: 36px;
+			margin-top: 20px;
+		}
+
+		h2 {
+			font-size: 24px;
+			margin-top: 30px;
+		}
+
+		img {
+			display: block;
+			margin: 0px auto 0;
+			max-width: 150px;
+			max-height: 150px;
+			border-radius: 50%;
+			box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+		}
+
+		ul {
+			list-style: none;
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+
+		li{
+			margin-bottom: 5px;
+		}
+
+		a{
+			color: #333;
+		}
+		a:hover {
+  			color: #009900;
+		}
+
+		.dropdown
+		{
+  		position: relative;
+  		display: inline-block;
+		}
+
+		.dropdown-content 
+		{
+  		display: none;
+  		position: absolute;
+  		background-color: #f9f9f9;
+  		min-width: 160px;
+  		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		padding: 12px 16px;
+  		z-index: 1;
+		}
+
+		.dropdown:hover .dropdown-content 
+		{
+ 		display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<div class="schermo">
+	<h1>Curriculum Vitae</h1>
+
+	<img src="https://asdcavenagodadda1972.it/wp-content/uploads/2021/06/profilovuoto.jpg" alt="Foto Mia">
+	<h2>Dati personali</h2>
+	<ul>
+		<li>Nome: Niccolò Malesci</li>
+		<li>Data di nascita: 14/03/2005</li>
+		<li>Città di residenza: Firenze</li>
+		<li><a href=”tel:+393299203026″>Telefono</a></li>
+		<li><a href= "mailto:niccomalesci@gmail.com">Mail personale</a></li>
+	</ul>
+
+	<h2>Formazione scolastica</h2>
+	<ul>
+	<li>Anno scolastico in corso: 4° superiore</li>
+	<li>Istituto scolastico:<a href= "https://www.peano.edu.it/pagine/tecnico-tecnologico-articolazione-informatica"><div class = "dropdown"><span>Liceo Tecnico Informatico</span> <div class = "dropdown-content"> <a href= "https://www.peano.edu.it/pagine/tecnico-tecnologico-articolazione-informatica"></a></div></a> "I.I.S.S. Giuseppe Peano" </div></li>
+	<li>Voti: Media voti 7.75/10</li>
+	</ul>
+
+	<h2>Esperienze lavorative</h2>
+	<p>Nessuna esperienza lavorativa</p>
+
+	<h2>Competenze Linguistiche</h2>
+	<ul>
+		<li>Italiano (madrelingua)</li>
+		<li>Inglese (livello B2)</li>
+	</ul>
+	<h2>Competenze Informatiche</h2>
+		<ul>
+			<li>Microsoft Office (Word, Excel, PowerPoint)</li>
+			<li>Linguaggi di programmazione (C++, Java, Python, JavaScript, HTML)</li>
+		</ul>
+
+	<h2>Interessi</h2>
+	<ul>
+		<li>Musica</li>
+		<li>Leggere</li>
+		<li>Palestra</li>
+		<li>Programmare</li>
+	</ul>
+
+	<h2>Di più su di me</h2>
+	<p>Sono un ragazzo a cui piace molto l'informatica, nello specifico la programmazione (non importa il linguaggio),
+	riesco a parlare bene inglese, nel mio tempo libero mi piace leggere e giocare online con i miei amici/uscirci.</p>
+	<p><marquee class="blink" direction="left" scrollamount="12">PER ULTERIORI INFORMAZIONI CONTATTARMI VIA MAIL</marquee></p>
+</div>
+</div>
+</body>
+</html>
